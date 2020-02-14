@@ -6,111 +6,83 @@
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/style.css">
   </head>
-  <body>
+  <body background="static/img/starWars.jpg" style="color: white"   >
+  <div id="image_transparent" >
     <!-- page content -->
-	<h1>Générateur de vaisseaux Star Wars</h1>
-	
-	<button>Générer un nouveau vaisseau</button>
-	
-	<!-- Exemple avec le vaisseau #10 -->
+	<center >
+        <h1 >Générateur de vaisseaux Star Wars</h1>
+
+		<button type="button" id="btnGenerer" class="btn btn-outline-warning"  >Générer un nouveau vaisseau</button>
+
+		<!-- Exemple avec le vaisseau #10 -->
 	<!-- https://swapi.co/api/starships/10/ -->
-	<h2>Informations</h2>
-	<table>
+
+        <table  class="table zebre table-hover"   frame="hsides"   bordercolor="gold"     border="4" >
+
+        <caption><h2>Informations</h2></caption>
 		<tr>
-			<th>Nom</td>
-			<td>Millenium Falcon</td>
+			<th  >Nom</td>
+			<td  id="nom" >Millenium Falcon</td>
 		</tr>
+
 		<tr>
-			<th>Modèle</td>
-			<td>YT-1300 light freighter</td>
+			<th >Modèle</td>
+			<td id="model">YT-1300 light freighter</td>
 		</tr>
 		<tr>
 			<th>Classe</td>
-			<td>Light freighter</td>
+			<td id="starship_class">Light freighter</td>
 		</tr>
 		<tr>
 			<th>Fabricant</td>
-			<td>Corellian Engineering Corporation</td>
+			<td id="manufacturer">Corellian Engineering Corporation</td>
 		</tr>
 		<tr>
 			<th>Coût (en crédits)</td>
-			<td>100000</td>
+			<td id="cost_in_credits">100000</td>
 		</tr>
 		<tr>
 			<th>Taille (en mètres)</td>
-			<td>34.37</td>
+			<td id="length">34.37</td>
 		</tr>
 		<tr>
 			<th>Nombre de membres de l'équipage</td>
-			<td>4</td>
+			<td id="mglt">4</td>
 		</tr>
 		<tr>
 			<th>Nombre de passagers</td>
-			<td>6</td>
+			<td id="passengers">6</td>
 		</tr>
 		<tr>
 			<th>Capacité de chargement maximale (en kg)</td>
-			<td>100000</td>
+			<td id="cargo_capacity">100000</td>
 		</tr>
 	</table>
-	
-	
 	<h2>Pilotes</h2>
-	<table>
+        <table  class="table zebre table-hover"  id="tablePilotes" frame="hsides"   bordercolor="gold"     border="4" >
 		<tr>
 			<th>Nom</th>
 			<th>Genre</th>
 		</tr>
-		<tr>
-			<td>Chewbacca</td>
-			<td>male</td>
-		</tr>
-		<tr>
-			<td>Han Solo</td>
-			<td>male</td>
-		</tr>
-		<tr>
-			<td>Lando Calrissian</td>
-			<td>male</td>
-		</tr>
-		<tr>
-			<td>Nien Nunb</td>
-			<td>male</td>
-		</tr>
+
 	</table>
 	
 	<h2>Films</h2>
-	<table>
+        <table  class="table zebre table-hover"  id="tableFilms"  frame="hsides"       border="4" >
 		<tr>
 			<th>Titre</th>
 			<th>Directeur</th>
 			<th>Date de sortie</th>
 		</tr>
-		<tr>
-			<td>The Empire Strikes Back</td>
-			<td>Irvin Kershner</td>
-			<td>1980-05-17</td>
-		</tr>
-		<tr>
-			<td>The Force Awaken</td>
-			<td>J. J. Abrams</td>
-			<td>2015-12-11</td>
-		</tr>
-		<tr>
-			<td>Return of the Jedi</td>
-			<td>Richard Marquand</td>
-			<td>1983-05-25</td>
-		</tr>
-		<tr>
-			<td>A New Hope</td>
-			<td>George Lucas</td>
-			<td>1977-05-25</td>
-		</tr>
+
 	</table>
-	
-	
-	
-	<!-- scripts -->
+		<!-- scripts -->
+		<script
+				src="https://code.jquery.com/jquery-3.4.1.min.js"
+				integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+				crossorigin="anonymous"></script>
 	<script src="static/js/script.js"></script>
+    </center>
+  </div>
   </body>
 </html>

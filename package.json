@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"compile": "node node_modules/sass/sass.js src/sass/style.sass static/css/style.css"
+    "compile": "node node_modules/sass/sass.js src/sass/style.sass static/css/style.css"
   },
   "author": "Kim Lavoie",
   "license": "ISC",
@@ -13,6 +13,19 @@
     "sass": "^1.25.0"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1"
-  }
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "packages": "0.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianLoic/sw-vaisseaux.git"
+  },
+  "keywords": [
+    "sw-vaisseaux"
+  ],
+  "bugs": {
+    "url": "https://github.com/ChristianLoic/sw-vaisseaux/issues"
+  },
+  "homepage": "https://github.com/ChristianLoic/sw-vaisseaux#readme"
 }

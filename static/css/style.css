@@ -1,0 +1,105 @@
+body {
+  margin: 10px;
+  color:white;
+    background-color: white;
+    /* for IE */
+    filter:alpha(opacity=40);
+    /* CSS3 standard */
+    opacity:0.6;
+}
+.table {
+  width:70%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-bottom: goldenrod;
+}
+.table caption {
+  font-size:1.4rem;
+  color:#ffffff;
+  text-align: center;
+  caption-side: top;
+  /* caption-side: bottom; // top|bottom|initial|inherit; */
+}
+.table th {color:white;}
+.table tfoot td {
+  color:#fff;
+  border-top:1px solid goldenrod;
+  border-bottom:1px solid goldenrod;
+}
+.zebre tbody tr:nth-child(odd) {
+
+  border-bottom:1px solid goldenrod;
+  color:#fff;
+}
+.zebre tbody tr:nth-child(even) {
+
+  border-bottom:1px solid goldenrod;
+  color:#fff;
+}
+.zebre tbody tr:hover:nth-child(odd) {
+  border-bottom:1px solid goldenrod;
+  color:#ffffff;
+}
+.zebre tbody tr:hover:nth-child(even) {
+  border-bottom:1px solid goldenrod;
+  color:#ffffff;
+}
+
+/* La couleur ne fonctionne pas avec odd / even */
+.table col:nth-child(1) {
+  background-color:#d6d3ce;
+}
+.table col:nth-child(2) {
+  background-color:#dddad4;width:100px;text-align:right;
+}
+.table col:nth-child(3) {
+  background-color:#c6c3bd;color:#fff;width:100px;text-align:right;
+}
+
+.table td:nth-child(2) {
+  text-align:right;
+}
+.table td:nth-child(3) {
+  text-align:right;
+}
+
+.table-hover{ }
+/* Define the default color for all the table rows */
+.table-hover tr
+{
+  opacity: 60%;
+}
+/* Define the hover highlight color for the table row */
+.table-hover tr:hover
+{
+  color:red;
+  opacity: 200%;
+
+}
+
+#image_transparent
+{
+
+   /*background-color: aqua;
+   filter:alpha(opacity=60);
+    opacity:0.6;
+    position: relative;
+    */
+}
+table
+{
+
+}
+h1 {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin: 10px;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
